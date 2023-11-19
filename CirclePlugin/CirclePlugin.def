@@ -1,0 +1,4 @@
+LIBRARY CirclePlugin
+EXPORTS
+	GetPluginName
+	GetPluginCurve
