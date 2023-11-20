@@ -9,7 +9,7 @@ std::string GetPluginName()
     return "Circle";
 }
 
-std::shared_ptr<Curve> GetPluginCurve(double r)
+std::shared_ptr<Curve> GetPluginCurve(double r, double none)
 {
     return std::make_shared<Circle>(r);
 }

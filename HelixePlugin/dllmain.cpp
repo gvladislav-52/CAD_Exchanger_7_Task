@@ -8,9 +8,9 @@ std::string GetPluginName()
 {
     return "Helix";
 }
-std::shared_ptr<Curve> _declspec(dllexport) GetPluginCurve()
+std::shared_ptr<Curve> _declspec(dllexport) GetPluginCurve(double one, double two)
 {
-    return std::make_shared<Helixe>();
+    return std::make_shared<Helixe>(one,two);
 }
 
 BOOL APIENTRY DllMain( HMODULE hModule,

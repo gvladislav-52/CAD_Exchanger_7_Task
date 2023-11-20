@@ -7,7 +7,7 @@ class Circle : public Curve
 private:
     double radius;
 public:
-    Circle(double r) :radius(r) {}
+    Circle(double r = 1) :radius(r) {}
     Point_3D get3dPoint(double t) const override;
     Vector_3D getFirstDerivative(double t) const override;
     void Show(const Curve* const circle, double t) const override;
