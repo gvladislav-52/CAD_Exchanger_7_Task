@@ -125,7 +125,7 @@ int main() {
         for (auto& curve : curve_vector)
             curve->Show(curve.get(), RANDOM_T);
     
-        cout << endl;
+        //cout << endl;
         //for (shared_ptr<Curve> curve : curve_vector)
         //{
         //    shared_ptr<Circle> circle = dynamic_pointer_cast<Circle>(curve);
@@ -147,8 +147,8 @@ int main() {
     
         //cout << "\nTHE TOTAL SUM OF ALL THE RADII OF THE CURVES: " << sum << endl;
     
-        //for (auto dll : dlls)
-        //{
-        //    FreeLibrary(dll.second);
-        //}
+        for (auto dll : dlls)
+        {
+            FreeLibrary(dll.second);
+        }
     }
